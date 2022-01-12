@@ -1,0 +1,149 @@
+﻿
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - My ASP.NET Application</title>
+	<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Corporate 1</title>
+
+
+	<link href="/Tasarim/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<link href="/Tasarim/css/bootstrap.min.css" rel="stylesheet">
+
+	
+
+
+</head>
+
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Logo and responsive toggle -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<span class="glyphicon glyphicon-fire"></span>
+					Stok
+				</a>
+			</div>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						@Html.ActionLink("AnaSayfa", "Index", "Home")
+					</li>
+					<li>
+						@Html.ActionLink("Hakkında", "About", "Home")
+					</li>
+					<li>
+						<a href="/Musteri/Index">Müşteri</a>
+					</li>
+					<li>
+						@Html.ActionLink("Kategori", "Index", "Kategori")
+					</li>
+					<li>
+						@Html.ActionLink("Ürünler", "Index", "Urun")
+					</li>
+
+					
+				</ul>
+
+				<!-- Search -->
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						@Html.TextBox("p")
+					</div>
+					<button type="submit" class="btn btn-default" href="strp ">Search</button>
+				</form>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+</body>
+
+
+
+<body>
+	<div class="container" top="20">@RenderBody()</div>
+</body>
+
+
+<!-- /.container -->
+
+	<footer style="margin-top:15px">
+		<div class="footer-blurb">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-fire"></span> Dynamically Procrastinate</h3>
+						<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+						<p><a class="btn btn-default" href="#">Procrastinate</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-cloud-upload"></span> Efficiently Unleash</h3>
+						<p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. </p>
+						<p><a class="btn btn-default" href="#">Unleash</a></p>
+					</div>
+					<div class="col-sm-4 footer-blurb-item">
+						<h3><span class="glyphicon glyphicon-leaf"></span> Completely Synergize</h3>
+						<p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+						<p><a class="btn btn-default" href="#">Synergize</a></p>
+					</div>
+
+				</div>
+				<!-- /.row -->
+			</div>
+		</div>
+
+		<div class="small-print">
+			<div class="container">
+				<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+				<p>Copyright &copy; Example.com 2015 </p>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- jQuery -->
+<script src="/Tasarim/js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/Tasarim/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport bug workaround -->
+<script src="/Tasarimjs/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Placeholder Images -->
+<script src="/Tasarim/js/holder.min.js"></script>
+
+
+
+</html>
+

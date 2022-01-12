@@ -1,0 +1,30 @@
+﻿@model test3.Models.StokEntity.StokMusteriBilgi
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <div> 
+        @using (Html.BeginForm("MusteriGuncelle", "Musteri", FormMethod.Post)) 
+        {
+		<div class="form-group">
+			@Html.LabelFor(m => m.MusteriID)
+			@Html.TextBoxFor(m => m.MusteriID, new { @class = "form-control" })
+			<br />
+			@Html.LabelFor(m => m.MusteriAd)
+			@Html.TextBoxFor(m => m.MusteriAd, new { @class = "form-control" })
+			<br />
+			@Html.LabelFor(m => m.MusteriSoyad)
+			@Html.TextBoxFor(m => m.MusteriSoyad, new { @class = "form-control" })
+			<br />
+			@Html.LabelFor(m => m.MusteriAdres)
+			@Html.TextBoxFor(m => m.MusteriAdres, new { @class = "form-control" })
+		</div>
+		<div>
+			<button class="btn btn-warning">Güncelle</button>
+		</div>
+        }       
+    </div>
+</body>
+</html>

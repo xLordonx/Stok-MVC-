@@ -1,0 +1,20 @@
+﻿body {
+	background:blue;
+}
+<style type="text/css" >
+
+#dis_bolme {
+	width: 500px;
+	height: 250px;
+	background-color: #666
+}
+
+.ic_bolme {
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: #CCC solid 1px;
+	background-color: #F00;
+	margin-right: 10px;
+	margin-left: 4px;
+	</style>

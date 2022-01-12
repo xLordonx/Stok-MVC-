@@ -1,0 +1,38 @@
+﻿@model test3.Models.StokEntity.StokUrunlerr
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UrunEkle</title>
+</head>
+<body style="margin-top:15px">
+	<form class="form-group" method="post" style="margin-top:15px">
+		<div>
+			<label>ÜrünAdı</label>
+			<input type="text" class="form-control" name="UrunAd"maxlength="50" required/>
+		</div>
+		<div>
+			<lable>Ürün Kategori</lable>
+			@Html.DropDownListFor(m =>m.StokKategori.KategoriID, (List<SelectListItem>)ViewBag.katdgr, new { @class = "form-control" })
+
+		</div>
+		<div>
+			<label>Fiyat</label>
+			<input type="text" name="Fiyat" class="form-control" maxlength="10" required />
+		</div>
+		<div>
+			<label>Stok</label>
+			<input type="text" class="form-control" name="Stok"maxlength="50" required/>
+		</div>
+		<div>
+			<label>Marka</label>
+			<input type="text" class="form-control" name="Marka" maxlength="50" required/>
+		</div>
+		<div>
+		      <button class="btn btn-info">Ürün ekle</button>
+		</div>
+		
+	</form>
+</body>
+</html>
