@@ -1,4 +1,6 @@
 # Stok-MVC-
+
+
 •Projede kullandığınız tasarım desenleri hangileridir? Bu desenleri neden kullandınız?
 -
 
