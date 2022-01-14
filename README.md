@@ -1,4 +1,5 @@
 # Stok-MVC-
+Yusuf Ergül
 
 
 •Projede kullandığınız tasarım desenleri hangileridir? Bu desenleri neden kullandınız?
