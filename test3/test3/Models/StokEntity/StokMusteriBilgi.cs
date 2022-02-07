@@ -11,9 +11,8 @@ namespace test3.Models.StokEntity
 {
     using System;
     using System.Collections.Generic;
-	using System.ComponentModel.DataAnnotations;
-
-	public partial class StokMusteriBilgi
+    
+    public partial class StokMusteriBilgi
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public StokMusteriBilgi()
@@ -22,15 +21,8 @@ namespace test3.Models.StokEntity
         }
     
         public int MusteriID { get; set; }
-
-        [Required(ErrorMessage ="Bu Alaný Doldurmadýnýz")]
-        [StringLength(50,ErrorMessage ="En fazla 50 Kareker Kullanabilirsiniz")]
         public string MusteriAd { get; set; }
-        [Required(ErrorMessage = "Bu Alaný Doldurmadýnýz")]
-        [StringLength(50, ErrorMessage = "En fazla 50 Kareker Kullanabilirsiniz")]
         public string MusteriSoyad { get; set; }
-        [Required(ErrorMessage = "Bu Alaný Doldurmadýnýz")]
-        [StringLength(50, ErrorMessage = "En fazla 50 Kareker Kullanabilirsiniz")]
         public string MusteriAdres { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

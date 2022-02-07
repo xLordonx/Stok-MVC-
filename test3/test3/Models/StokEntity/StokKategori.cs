@@ -11,9 +11,8 @@ namespace test3.Models.StokEntity
 {
     using System;
     using System.Collections.Generic;
-	using System.ComponentModel.DataAnnotations;
-
-	public partial class StokKategori
+    
+    public partial class StokKategori
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public StokKategori()
@@ -22,7 +21,6 @@ namespace test3.Models.StokEntity
         }
     
         public int KategoriID { get; set; }
-        [Required(ErrorMessage ="Kategori Adýný Doldurunuz!")]
         public string KategoriAd { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

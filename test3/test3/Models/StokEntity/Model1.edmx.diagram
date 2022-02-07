@@ -14,6 +14,8 @@
         <AssociationConnector Association="DbTestStokModel.FK_StokUrunlerr_StokKategori" ManuallyRouted="false" />
         <AssociationConnector Association="DbTestStokModel.FK_StokSatislar_StokMusteriBilgi" ManuallyRouted="false" />
         <AssociationConnector Association="DbTestStokModel.FK_StokSatislar_StokUrunlerr" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbTestStokModel.StokPersonelGiris" Width="1.5" PointX="9.125" PointY="4.625" />
+        <EntityTypeShape EntityType="DbTestStokModel.StokKullaniciGirisi" Width="1.5" PointX="11" PointY="4.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
