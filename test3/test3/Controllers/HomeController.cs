@@ -67,6 +67,11 @@ namespace test3.Controllers
 
         }
 
+        public ActionResult Sec()
+        {
+            return View();
+        }
+
 
 
     }

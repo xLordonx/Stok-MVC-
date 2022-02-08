@@ -5,7 +5,9 @@
 @using PagedList.Mvc
 @using test3.Models.StokEntity;
 @model PagedList.IPagedList<StokMusteriBilgi>
-
+@{
+	Layout = "~/Views/Shared/_Personel.cshtml";
+}
 <!DOCTYPE html>
 
 <html>
@@ -27,23 +29,23 @@
 			<tbody>
 				@foreach (var mus in Model)
 				{
-				<tr>
-					<th>@mus.MusteriID</th>
-					<td>@mus.MusteriAd</td>
-					<td>@mus.MusteriSoyad</td>
-					<td>@mus.MusteriAdres</td>
-					<td>@Html.ActionLink("Sil Butonu", "MusteriSil", new { id = mus.MusteriID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek istiyormusunuz ?')" })</td>
+					<tr>
+						<th>@mus.MusteriID</th>
+						<td>@mus.MusteriAd</td>
+						<td>@mus.MusteriSoyad</td>
+						<td>@mus.MusteriAdres</td>
+						<td>@Html.ActionLink("Sil Butonu", "MusteriSil", new { id = mus.MusteriID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek istiyormusunuz ?')" })</td>
 
-					@*<td><a href="/Musteri/MusteriSil/@mus.MusteriID" class="btn btn-danger">Sil</a></td>*@
-					<td><a href="/Musteri/MusteriGetir/@mus.MusteriID" class="btn btn-success">Güncelle</a></td>
+						@*<td><a href="/Musteri/MusteriSil/@mus.MusteriID" class="btn btn-danger">Sil</a></td>*@
+						<td><a href="/Musteri/MusteriGetir/@mus.MusteriID" class="btn btn-success">Güncelle</a></td>
 
 
-				</tr>
+					</tr>
 				}
 			</tbody>
 
 		</table>
-		
+
 		<a href="/Musteri/MusteriEkle/" class="btn btn-primary">Müşteri Ekle</a>
 	</div>
 </body>

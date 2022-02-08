@@ -1,5 +1,7 @@
 ﻿@model test3.Models.StokEntity.StokKategori
-
+@{
+	Layout = "~/Views/Shared/_Personel.cshtml";
+}
 <!DOCTYPE html>
 
 <html>
@@ -7,17 +9,17 @@
 <body>
 	@using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
 	{
-	<div class="form-group">
-		@Html.LabelFor(m => m.KategoriID)
-		@Html.TextBoxFor(m => m.KategoriID, new { @class = "form-control" })
-		<br />
-		@Html.LabelFor(m => m.KategoriAd)
-		@Html.TextBoxFor(m => m.KategoriAd, new { @class = "form-control" })
-	
-	</div>
-	<div>
-		<button class="btn btn-warning ">Güncelle</button>
-	</div>
+		<div class="form-group">
+			@Html.LabelFor(m => m.KategoriID)
+			@Html.TextBoxFor(m => m.KategoriID, new { @class = "form-control" })
+			<br />
+			@Html.LabelFor(m => m.KategoriAd)
+			@Html.TextBoxFor(m => m.KategoriAd, new { @class = "form-control" })
+
+		</div>
+		<div>
+			<button class="btn btn-warning ">Güncelle</button>
+		</div>
 	}
 </body>
 </html>

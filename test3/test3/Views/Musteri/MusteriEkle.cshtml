@@ -1,13 +1,16 @@
 ﻿@model test3.Models.StokEntity.StokMusteriBilgi
+@{
+	Layout = "~/Views/Shared/_Personel.cshtml";
+}
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>MusteriEkle</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>MusteriEkle</title>
 </head>
 <body>
-	<form method="post"  class="form-group">
+	<form method="post" class="form-group">
 		<div>
 			<label>Müşteri Adı</label>
 			@Html.TextBoxFor(m => m.MusteriAd, new { @class = "form-control" })
@@ -25,8 +28,8 @@
 		<div>
 			<button class="btn btn-info">Müşteri Ekle</button>
 		</div>
-		
-		
+
+
 	</form>
 </body>
 </html>

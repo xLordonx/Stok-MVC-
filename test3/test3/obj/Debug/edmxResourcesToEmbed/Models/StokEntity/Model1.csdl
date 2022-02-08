@@ -149,6 +149,7 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="StokKullaniciGirisi" EntityType="DbTestStokModel.StokKullaniciGirisi" />
   </EntityContainer>
   <EntityType Name="StokPersonelGiris">
     <Key>
@@ -169,4 +170,14 @@
     <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
+  <EntityType Name="StokKullaniciGirisi">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Mail" />
+      <PropertyRef Name="Sifre" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mail" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

@@ -7,6 +7,18 @@
     <Property Name="KategoriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="KategoriAd" Type="nchar" MaxLength="10" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DbTestStok.dbo.StokKullaniciGirisi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="StokKullaniciGirisi">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Mail" />
+      <PropertyRef Name="Sifre" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="StokMusteriBilgi">
     <Key>
       <PropertyRef Name="MusteriID" />
@@ -141,6 +153,13 @@ warning 6002: The table/view 'DbTestStok.dbo.StokPersonelGiris' does not have a 
     <EntitySet Name="StokSatislar" EntityType="Self.StokSatislar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StokUrunlerr" EntityType="Self.StokUrunlerr" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StokKullaniciGirisi" EntityType="Self.StokKullaniciGirisi" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [StokKullaniciGirisi].[ID] AS [ID], 
+    [StokKullaniciGirisi].[Mail] AS [Mail], 
+    [StokKullaniciGirisi].[Sifre] AS [Sifre]
+    FROM [dbo].[StokKullaniciGirisi] AS [StokKullaniciGirisi]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="StokPersonelGiris" EntityType="Self.StokPersonelGiris" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [StokPersonelGiris].[ID] AS [ID], 

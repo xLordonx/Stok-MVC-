@@ -97,5 +97,14 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbTestStokModel.Store.sp_renamediagram" />
     <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbTestStokModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="StokKullaniciGirisi">
+      <EntityTypeMapping TypeName="DbTestStokModel.StokKullaniciGirisi">
+        <MappingFragment StoreEntitySet="StokKullaniciGirisi">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

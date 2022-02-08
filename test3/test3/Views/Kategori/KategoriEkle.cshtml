@@ -1,18 +1,20 @@
 ﻿@model test3.Models.StokEntity.StokKategori
-
+@{
+	Layout = "~/Views/Shared/_Personel.cshtml";
+}
 <!DOCTYPE html>
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>KategoriEkle</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>KategoriEkle</title>
 </head>
 <body>
 	<form class="form-group" method="post">
 		@*<div>
-			<label>Kategori Adı</label>
-			<input type="text" class="form-control" name="KategoriAd" />
-		</div>
+				<label>Kategori Adı</label>
+				<input type="text" class="form-control" name="KategoriAd" />
+			</div>
 		*@
 		<div style="margin-top:30px">
 			<label>Kategori Adı</label>
@@ -25,8 +27,8 @@
 			<button class="btn btn-info" id="btn1">Kategori Ekle</button>
 		</div>
 		@*<script>
-			$('btn1').click(function () { alert('Müşteri ekleme işlemi yapıldı.'); });
-		</script>*@
+				$('btn1').click(function () { alert('Müşteri ekleme işlemi yapıldı.'); });
+			</script>*@
 	</form>
 </body>
 

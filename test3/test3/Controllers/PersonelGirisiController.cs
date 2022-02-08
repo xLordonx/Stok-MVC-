@@ -20,7 +20,7 @@ namespace test3.Controllers
             var bilgiler = db.StokPersonelGiris.FirstOrDefault(x => x.Mail == T.Mail && x.Sifre == T.Sifre);
             if (bilgiler != null)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Kategori");
             }
             else
             {
